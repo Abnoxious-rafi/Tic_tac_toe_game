@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".play_with_ai">
+
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="63dp"
+        android:layout_height="54dp"
+        android:background="@drawable/backdot"
+        android:contentDescription="Button without text"
+        android:onClick="backbtnonclick"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351" />
+
+    <com.example.myapplication.Tic_tac_toe
+        android:id="@+id/tic_tac_toe2"
+        android:layout_width="343dp"
+        android:layout_height="347dp"
+        android:layout_marginTop="128dp"
+        android:background="#FFFFFF"
+        app:boardColor="#171212"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tic_tac_toe2"
+        app:layout_constraintVertical_bias="0.658">
+
+        <Button
+            android:id="@+id/button30"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_margin="40dp"
+            android:background="@drawable/blue_button"
+            android:onClick="homebuttonclick"
+            android:text="@string/home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.797"
+            app:layout_constraintStart_toEndOf="@+id/button29"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button29"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/blue_button"
+            android:onClick="playagain"
+            android:text="@string/playagain"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/cell_button"
+        android:contentDescription="Button without text"
+        android:onClick="onbutton11click"
+        app:layout_constraintEnd_toStartOf="@+id/button21"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tic_tac_toe2"
+        app:layout_constraintTop_toTopOf="@+id/tic_tac_toe2" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/cell_button"
+        android:contentDescription="Button without text"
+        android:onClick="onbutton12click"
+        app:layout_constraintEnd_toStartOf="@+id/button22"
+        app:layout_constraintTop_toTopOf="@+id/tic_tac_toe2" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/cell_button"
+        android:contentDescription="Button without text"
+        android:onClick="onbutton13click"
+        app:layout_constraintEnd_toEndOf="@+id/tic_tac_toe2"
+        app:layout_constraintTop_toTopOf="@+id/tic_tac_toe2" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/cell_button"
+        android:contentDescription="Button without text"
+        android:onClick="onbutton21click"
+        app:layout_constraintEnd_toStartOf="@+id/button24"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="@+id/tic_tac_toe2"
+        app:layout_constraintTop_toBottomOf="@+id/button20" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/cell_button"
+        android:contentDescription="Button without text"
+        android:onClick="onbutton22click"
+        app:layout_constraintEnd_toStartOf="@+id/button25"
+        app:layout_constraintTop_toBottomOf="@+id/button21" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/cell_button"
+        android:contentDescription="Button without text"
+        android:onClick="onbutton23click"
+        app:layout_constraintEnd_toEndOf="@+id/tic_tac_toe2"
+        app:layout_constraintTop_toBottomOf="@+id/button22" />
+
+    <Button
+        android:id="@+id/button26"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/cell_button"
+        android:contentDescription="Button without text"
+        android:onClick="onbutton31click"
+        app:layout_constraintBottom_toBottomOf="@+id/tic_tac_toe2"
+        app:layout_constraintEnd_toStartOf="@+id/button27"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="@+id/tic_tac_toe2"
+        app:layout_constraintTop_toBottomOf="@+id/button23"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button27"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/cell_button"
+        android:contentDescription="Button without text"
+        android:onClick="onbutton32click"
+        app:layout_constraintBottom_toBottomOf="@+id/tic_tac_toe2"
+        app:layout_constraintEnd_toStartOf="@+id/button28"
+        app:layout_constraintTop_toBottomOf="@+id/button24"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button28"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/cell_button"
+        android:contentDescription="Button without text"
+        android:onClick="onbutton33click"
+        app:layout_constraintBottom_toBottomOf="@+id/tic_tac_toe2"
+        app:layout_constraintEnd_toEndOf="@+id/tic_tac_toe2"
+        app:layout_constraintTop_toBottomOf="@+id/button25"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="159dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="80dp"
+        android:text="Tic Tac Toe"
+        android:textAlignment="center"
+        android:textColor="#009688"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        android:text="TextView"
+        android:textColor="#009688"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/tic_tac_toe2"
+        app:layout_constraintEnd_toStartOf="@+id/textView12"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="TextView"
+        android:textColor="#009688"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/tic_tac_toe2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.396" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

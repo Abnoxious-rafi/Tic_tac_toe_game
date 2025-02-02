@@ -27,9 +27,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -53,7 +53,7 @@
             android:id="@+id/button5"
             android:layout_width="150dp"
             android:layout_height="60dp"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="28dp"
             android:background="@drawable/blue_button"
             android:onClick="playagainbuttonclick"
             android:text="@string/playagain"
@@ -95,7 +95,6 @@
         android:layout_marginTop="8dp"
         android:onClick="onbutton12click"
         android:background="@drawable/cell_button"
-
         android:contentDescription="Button without text"
         app:layout_constraintStart_toEndOf="@+id/button6"
         app:layout_constraintTop_toTopOf="@+id/tic_tac_toe" />
@@ -199,24 +198,24 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="62dp"
+        android:layout_height="19dp"
         android:shadowColor="#101010"
         android:text="TextView"
         android:textColor="#009688"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toStartOf="@+id/textView6"
-        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintHorizontal_bias="0.158"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.079" />
+        app:layout_constraintVertical_bias="0.078" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
+        android:layout_width="70dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="40dp"
         android:text="TextView"
         android:textColor="#009688"
         android:textStyle="bold|italic"

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/playersetup_background"
+    tools:context=".Ai_play">
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="142dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/button_bg"
+        android:onClick="nextButton"
+        android:text="@string/nextbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playername3"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <EditText
+        android:id="@+id/playername3"
+        android:layout_width="295dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/player2submit"
+        android:inputType="text"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="196dp"
+        android:text="player Name"
+        android:textColor="#9C27B0"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button18" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="63dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/backdot"
+        android:contentDescription="Button without text"
+        android:onClick="backbtnclick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

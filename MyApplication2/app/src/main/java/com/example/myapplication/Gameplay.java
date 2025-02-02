@@ -4,12 +4,19 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.content.Intent;
 import android.graphics.Canvas;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.media.MediaPlayer;
 public class Gameplay extends AppCompatActivity {
+
+    temp t;
+    DatabaseHelper dbHelper;
+    MediaPlayer meadiap;
+//    Handler handler = new Handler();
     private static int[][] a = new int[4][4];
     TextView turnflip1,turnflip2;
     String[] playernam;
@@ -22,6 +29,11 @@ public class Gameplay extends AppCompatActivity {
         setContentView(R.layout.game_play);
         Intent intent=getIntent();
 
+        meadiap = MediaPlayer.create(this,R.raw.click_snd);
+
+        dbHelper = new DatabaseHelper(this);
+        t=new temp();
+
         turnflip1=findViewById(R.id.textView7);
         turnflip2=findViewById(R.id.textView8);
 
@@ -33,7 +45,6 @@ public class Gameplay extends AppCompatActivity {
         txview=findViewById(R.id.textView4);
 
         ticTacToe=findViewById(R.id.tic_tac_toe);
-//        ticTacToe.giveline(0);
 
         if(turn==1) {
             turnflip1.setVisibility(View.VISIBLE);
@@ -46,8 +57,14 @@ public class Gameplay extends AppCompatActivity {
             turnflip1.setVisibility(View.INVISIBLE);
         }
     }
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        t.insertdata(dbHelper,playernam[0] ,  playernam[1] ,pl1score , pl2score);
+    }
     public void reuse()
     {
+        meadiap = MediaPlayer.create(this,R.raw.click_snd);
         for(int i=0;i<4;i++)
             for(int j=0;j<4;j++)
                 a[i][j]=0;
@@ -67,12 +84,17 @@ public class Gameplay extends AppCompatActivity {
         txview.setText("Tic Tac Toe");
         ticTacToe.clearCanvas();
     }
+
     public void win_celebration()
     {
+
+        meadiap=MediaPlayer.create(this,R.raw.wincele);
+        meadiap.start();
         if(turn == 1)
             pl1score++;
         else
             pl2score++;
+
         txview.setText(playernam[turn-1]+" Win..");
         TextView tx1=findViewById(R.id.textView5),tx2=findViewById(R.id.textView6);
         tx1.setText(playernam[0]+" "+pl1score);
@@ -91,8 +113,14 @@ public class Gameplay extends AppCompatActivity {
     }
     public boolean checkwhin()
     {
-        if(counter==9)
-            txview.setText("Draw");
+        meadiap.start();
+//        handler.postDelayed(() -> {
+//            if (meadiap.isPlaying()) {
+//                meadiap.pause();
+//                meadiap.seekTo(0); // Reset to start
+//            }
+//        }, 600);
+
         if(a[1][1]!=0)
         {
             if(a[1][2]==a[1][1] &&  a[1][3]==a[1][1]) {
@@ -148,11 +176,18 @@ public class Gameplay extends AppCompatActivity {
             turnflip2.setVisibility(View.INVISIBLE);
             turn=1;
         }
+        if(counter==9) {
+            txview.setText("Draw");
+            meadiap= MediaPlayer.create(this,R.raw.no_no);
+            meadiap.start();
+        }
         return false;
     }
     public void homebuttonclick(View view)
     {
+        t.insertdata(dbHelper,playernam[0] ,  playernam[1] ,pl1score , pl2score);
         reuse();
+        meadiap.release();
         pl1score=0;
         pl2score=0;
         turn=1;
@@ -166,7 +201,9 @@ public class Gameplay extends AppCompatActivity {
     }
     public void backbtnonclick(View view)
     {
+        t.insertdata(dbHelper,playernam[0] ,  playernam[1] ,pl1score , pl2score);
         reuse();
+        meadiap.release();
         pl1score=0;
         pl2score=0;
         turn=1;
