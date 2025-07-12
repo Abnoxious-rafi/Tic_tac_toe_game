@@ -10,6 +10,8 @@ A modern and interactive Tic Tac Toe game developed in Android Studio using Java
 
 👥 Two Player Mode: Play with a friend on the same device.
 
+Uses sound system for clicking and wining
+
 📱 Platform
 Android (Optimized for phones and tablets)
 
@@ -17,9 +19,15 @@ the apk file is given as "app-debug.apk".
 
 pic of game:
 
+ Front page:
+ 
 ![image alt](https://github.com/Abnoxious-rafi/Tic_tac_toe_game/blob/01281f321497b4ea4c349b4df47a951a8ebc105f/extra/photo_2025-07-12_15-53-57.jpg)
 
+Database:
+
 ![image alt](https://github.com/Abnoxious-rafi/Tic_tac_toe_game/blob/4e97d61fe500928be76953676fe071ab4a665196/extra/photo_2025-07-12_15-53-56.jpg)
+
+Two player setup:
 
 ![image alt](https://github.com/Abnoxious-rafi/Tic_tac_toe_game/blob/4e97d61fe500928be76953676fe071ab4a665196/extra/photo_2025-07-12_15-53-54.jpg)
 
