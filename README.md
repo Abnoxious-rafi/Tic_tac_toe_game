@@ -1,21 +1,33 @@
-🎮 Tic Tac Toe - Android Game
-A modern and interactive Tic Tac Toe game developed in Android Studio using Java/Kotlin. This app features a polished design, local data storage, and multiple game modes for solo or shared play.
+# 🎮 Tic Tac Toe - Android Game
 
-🔧 Features
-🎨 Custom UI Design: Clean and responsive user interface with engaging visuals.
+A modern and interactive Tic Tac Toe game developed in **Android Studio** using Java/Kotlin. This app features a polished design, local data storage, sound effects, and multiple game modes for solo or shared play.
 
-🗄️ Database Integration: Stores player stats and game history using local database (e.g., SQLite/Room).
+## 🔧 Features
 
-🤖 Single Player Mode: Play against an intelligent self-playing bot.
+- 🎨 **Custom UI Design**  
+  Clean and responsive user interface with engaging visuals.
 
-👥 Two Player Mode: Play with a friend on the same device.
+- 🗄️ **Database Integration**  
+  Stores player stats and game history using a local database (e.g., SQLite or Room).
 
-Uses sound system for clicking and wining
+- 🤖 **Single Player Mode**  
+  Play against an intelligent self-playing bot.
 
-📱 Platform
-Android (Optimized for phones and tablets)
+- 👥 **Two Player Mode**  
+  Play with a friend on the same device.
 
-the apk file is given as "app-debug.apk".
+- 🔊 **Sound System**  
+  Sound effects for clicking and winning enhance the game experience.
+
+## 📱 Platform
+
+- Android (Optimized for phones and tablets)
+
+## 📦 APK
+
+- The APK file is available here: [`app-debug.apk`](./app-debug.apk)
+
+## 🖼️ Screenshot
 
 pic of game:
 
