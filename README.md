@@ -25,7 +25,7 @@ A modern and interactive Tic Tac Toe game developed in **Android Studio** using 
 
 ## 📦 APK
 
-- The APK file is available here: [`app-debug.apk`](./app-debug.apk)
+- The APK file is available here: [`app-debug.apk`]([./app-debug.apk](https://github.com/Abnoxious-rafi/Tic_tac_toe_game/blob/4b04ee7cf19e49a286f9cfac7e84c415e48b08e7/app-debug.apk))
 
 ## 🖼️ Screenshot
 
